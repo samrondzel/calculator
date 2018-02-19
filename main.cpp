@@ -52,7 +52,7 @@ void drawPyramid(int size){
     int amount = 1;
     int maxAmount = 1;
     while(i<=size){
-        maxAmount+=2;
+        maxAmount += 2;
         i++;
     }
     i = 1;
@@ -65,9 +65,10 @@ void drawPyramid(int size){
         for(j = 0; j<amount;j++){
             printf("X");
         }
-        for(j = 0; j<spacesN; j++){
+      /*  for(j = 0; j<spacesN; j++){
             printf(" ");
-        }
+        }*/
+      //  printf("-%i-",spacesN);
         printf("\n");
         amount+=2;
         i++;
@@ -76,7 +77,6 @@ void drawPyramid(int size){
 
 // size from 1 to 20
 void drawChristmasTree(int size){
-
     int layer = 1;
     int maxAmount = 1;
     while(layer<=size){
@@ -96,9 +96,9 @@ void drawChristmasTree(int size){
             for(j = 0; j<elementsLayer;j++){
                 printf("X");
             }
-            for(j = 0; j<spacesN; j++){
+          /*  for(j = 0; j<spacesN; j++){
                 printf(" ");
-            }
+            }*/
             printf("\n");
             i++;
             elementsLayer+=2;
@@ -203,3 +203,4 @@ int main(){
 	}
 
 }
+
